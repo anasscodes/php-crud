@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Add Data</title>
+	<link rel="stylesheet" href="Add.css">
+	<script type="text/javascript">
+		function validate() {
+			if (document.form1.name.value == '') {
+				alert('Please provide your name');
+				document.form1.name.focus();				
+				return false;
+			}
+			if (document.form1.price.value == '' || isNaN(document.form1.price.value) || document.form1.price.value <= 0) {
+				alert('Please provide a valid price');
+				document.form1.price.focus();
+				return false;
+			}
+			if (document.form1.quantity.value == '' || isNaN(document.form1.quantity.value) || document.form1.quantity.value <= 0) {
+				alert('Please provide a valid quantity');
+				document.form1.quantity.focus();
+				return false;
+			}
+			if (document.form1.picture.value == '') {
+				alert('Please upload a picture');
+				document.form1.picture.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>	
+</head>
+
+<body>
+	<h2><center><a href="index.php">Products</a></center></h2>
+	<br/><br/>
+	<form action="add.php" method="post" name="form1" enctype="multipart/form-data" onsubmit="return validate();">
+		<table>
+			<tr> 
+				<td>Identity</td>
+				<td><input type="number" name="id" min="1" required></td>
+			</tr>
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name" required></td>
+			</tr>
+			<tr> 
+				<td>Price</td>
+				<td><input type="number" name="price" required></td>
+			</tr>
+			<tr> 
+				<td>Description</td>
+				<td><input type="text" name="description" required></td>
+			</tr>
+			<tr> 
+				<td>Quantity</td>
+				<td><input type="number" name="quantity" min="1" required></td>
+			</tr>
+			<tr> 
+				<td>Picture</td>
+				<td><input type="file" name="picture" accept="image/*" required></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

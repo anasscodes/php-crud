@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin:auto;
+    padding: auto;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#msg {
+    color: #ff6f61;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table th, form table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+form table th {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+}
+
+form table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form table tr:hover {
+    background-color: #fde4e4;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="file"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e05a4f;
+}
+
+form input[type="submit"]:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    form table {
+        width: 100%;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}

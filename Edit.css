@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #ff6f61;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table td {
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ff6f61;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 10px;
+    border: 2px solid #ff6f61;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #f7f9fc;
+}
+
+textarea {
+    max-width: 400px; /* Adjust this value as needed */
+}
+
+input[type="submit"] {
+    background: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #ff3f3a;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+#msg {
+    text-align: center;
+    font-size: 1.2em;
+    color: #d93025;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #fde4e4;
+}
+
+table td:first-child {
+    width: 150px;
+}
